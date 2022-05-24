@@ -8,17 +8,22 @@ function generatePassword() {
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
 
-  var input = parseInt(prompt("Choose a lenght between 8 and 128"));
+  var input = parseInt(prompt("Choose a length between 8 and 128"));
 
   if (input >= 8 && input <= 128) {
     // GOOD CODE GOES HERE
   } else {
-    alert("NOT COOL");
+    alert("Whoopsie");
   }
 
   return "";
 }
-
+// Added Prompts// 
+var userWantsNums = window.confirm('Would you like numbers in the password?')
+var userWantsSymbols = window.confirm('Would you like symbols in the password?')
+var userWantslowerCase = window.confirm('Would you like lowercase letters in the password')
+var userWantsupperCAse = window.conmfirm("Would you like uppercase letters in the password")
+console.log(input)
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
